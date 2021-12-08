@@ -21,10 +21,18 @@ function App() {
       return updatedItems;
     });
   };
+  let content = (
+    <p style={{ textAlign: "center" }}>No goals found. Maybe add one?</p>
+  );
+
+  if (items.length > 0) {
+    content = <GoalItemList goals={items} deleteGoal={deleteGoal} />;
+  }
   return (
     <div className="wrapper-class">
       <Input addGoal={addGoal} />
-      <GoalItemList goals={items} deleteGoal={deleteGoal} />
+      {/* <GoalItemList goals={items} deleteGoal={deleteGoal} /> */}
+      {content}
     </div>
   );
 }
