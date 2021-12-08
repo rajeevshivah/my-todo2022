@@ -4,3 +4,9 @@
   align-items: center;
   justify-content: space-around;
 }
+
+p {
+  margin-top: 3rem;
+  font-size: large;
+  font-weight: bold;
+}
