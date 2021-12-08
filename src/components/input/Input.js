@@ -1,6 +1,19 @@
 import React, { useState } from "react";
 import Button from "../UI/button/Button";
 import "./input.css";
+import styled from "styled-components";
+
+const FormControl = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 30rem;
+  height: 10rem;
+  background-color: aliceblue;
+  justify-content: space-around;
+  border-radius: 5px;
+  box-shadow: 10px 10px 8px 10px #13748b;
+  margin-top: 5%;
+`;
 
 const Input = ({ addGoal }) => {
   const [goal, setGoal] = useState();
@@ -23,7 +36,7 @@ const Input = ({ addGoal }) => {
   };
   return (
     <form className="form" onSubmit={formSubmitHandler}>
-      <div className="fields">
+      <FormControl>
         <label className={`${!isValid ? "label" : ""}`}>Course Goal</label>
         <input
           type="text"
@@ -33,7 +46,7 @@ const Input = ({ addGoal }) => {
         <div className="button-div">
           <Button type="submit">Add Goal</Button>
         </div>
-      </div>
+      </FormControl>
     </form>
   );
 };
