@@ -1,0 +1,12 @@
+.goal-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.ul-wrapper {
+  width: 30rem;
+  height: 10rem;
+  background-color: gray;
+  margin-top: 5rem;
+}

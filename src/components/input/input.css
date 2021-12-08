@@ -1,0 +1,31 @@
+.form {
+  display: flex;
+  justify-content: center;
+}
+.fields {
+  display: flex;
+  flex-direction: column;
+  width: 30rem;
+  height: 10rem;
+  background-color: aliceblue;
+  justify-content: space-around;
+  border-radius: 5px;
+  box-shadow: 10px 10px 8px 10px #13748b;
+  margin-top: 5%;
+}
+label {
+  margin-left: 2rem;
+  font-size: large;
+  font-weight: bold;
+}
+
+.button-div {
+  display: flex;
+  justify-content: center;
+}
+.input {
+  width: 25rem;
+  margin-left: 2rem;
+  height: 1.5rem;
+  border-radius: 5px;
+}
