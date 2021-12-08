@@ -31,7 +31,7 @@ const Input = ({ addGoal }) => {
           onChange={(event) => goalInputChangedHandler(event)}
         />
         <div className="button-div">
-          <Button type="submit" />
+          <Button type="submit">Add Goal</Button>
         </div>
       </div>
     </form>
